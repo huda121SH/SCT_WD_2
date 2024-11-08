@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: fantasy;
+    background-image:url('images/ga.png');
+    background-color: #0000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+}
+
+.stopwatch {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 4px 4px 50px rgb(16, 93, 181);
+}
+
+
+#display {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family:fantasy;
+    font-style:oblique;
+    font-weight: 500;
+    color: #6fcbdf;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: fantasy;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #6fcbdf;
+    box-shadow: 4px 4px 10px  rgb(16, 93, 181);
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #7abbc9;
+}
+
+.controls {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.laps-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    max-height: 20px;
+} 
+
+.laps-container {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.laps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.lap-item {
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 8px 0;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #6fcbdf;
+    box-shadow: 0 0 15px rgba(0, 184, 212, 0.5);
+    transition: all 0.3s ease;
+}
+
+.lap-item:hover {
+    background-color: #00b8d4;
+    transform: scale(1.05);
+}
+
+.lap-item span {
+    font-weight: bold;
+}
+
+/* #heading {
+    font-size: 2em; 
+    color: #1b869e; 
+    font-family: 'Georgia', serif; 
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.5), 
+        0px 0px 25px #7abbc9, 
+        0px 0px 5px #7abbc9; 
+    letter-spacing: 2px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    background: linear-gradient(90deg, #1b869e, #7abbc9); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    padding: 5px; 
+    border-radius: 5px; 
+} */
